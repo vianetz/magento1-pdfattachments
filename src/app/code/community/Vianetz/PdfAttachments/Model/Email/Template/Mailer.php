@@ -47,7 +47,7 @@ class Vianetz_PdfAttachments_Model_Email_Template_Mailer extends Mage_Core_Model
             // Handle "Bcc" recipients of the current email
             $emailTemplate->addBcc($emailInfo->getBccEmails());
 
-            Mage::dispatchEvent('$this->_eventPrefix . _send_before', array('email_template' => $emailTemplate, 'email_info' => $emailInfo, 'mailer' => $this));
+            Mage::dispatchEvent($this->_eventPrefix . '_send_before', array('email_template' => $emailTemplate, 'email_info' => $emailInfo, 'mailer' => $this));
 
             // Set required design parameters and delegate email sending to Mage_Core_Model_Email_Template
             if ($emailTemplate->getMail()->hasAttachments === false) {
