@@ -7,7 +7,18 @@ Facts
 
 Description
 -----------
-This extension provides methods to attach PDF documents to Magento emails.
+This extension provides methods to attach documents to Magento emails, i.e. it does not have any configuration or
+does anything out of the box. You can use it to base your own Magento extensions on it.
+
+Additionally the extensions introduces the following new events to hook into the email sending process:
+- vianetz_pdfattachments_email_template_init
+- vianetz_pdfattachments_email_send_before
+- vianetz_pdfattachments_email_send_after
+
+You can use the following helper method to attach any document to an email, e.g. in the _email\_send\_before_ event:
+```php
+Mage::helper('vianetz/pdfattachments')->addAttachmentToEmail(Mage_Core_Model_Email_Template $emailTemplate, $fileContents, $filename);
+```
 
 Requirements
 ------------
