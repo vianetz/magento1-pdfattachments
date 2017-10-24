@@ -3,7 +3,7 @@ Vianetz PDF Attachments Extension
 
 Facts
 -----
-- version: 1.0.0
+- version: 1.0.1
 
 Description
 -----------
@@ -19,6 +19,8 @@ You can use the following helper method to attach any document to an email, e.g.
 ```php
 Mage::helper('vianetz/pdfattachments')->addAttachmentToEmail(Mage_Core_Model_Email_Template $emailTemplate, $fileContents, $filename);
 ```
+
+A sample implementation of the usage of this module can be found in our [Advanced Invoice Layout Extension for Magento](https://www.vianetz.com/advancedinvoicelayout).
 
 Requirements
 ------------
