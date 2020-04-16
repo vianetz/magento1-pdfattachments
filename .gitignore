@@ -6,3 +6,5 @@
 *.bak
 *.swp
 *~.nib
+vendor/
+composer.lock
