@@ -50,6 +50,6 @@ See also LICENSE file.
 
 Copyright
 ---------
-(c) 2008-17 vianetz
+(c) since 2008 vianetz
 
 This Library uses Semantic Versioning - please find more information at http://semver.org.
